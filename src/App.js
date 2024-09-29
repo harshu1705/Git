@@ -14,7 +14,7 @@ const App = () => {
 
   // Load users from a CSV file on component mount
   React.useEffect(() => {
-    fetch('/participants.csv')
+    fetch('/participantsnew.csv')
       .then(response => response.text())
       .then(csvText => {
         Papa.parse(csvText, {
